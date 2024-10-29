@@ -6,8 +6,8 @@ This API translates natural language descriptions into SQL statements for an exi
 
 For machine learning worloads, the API relies on the [HuggingFace Inference API](https://huggingface.co/docs/huggingface_hub/guides/inference). The following environment variables must be set in the respective `.env` file.
 
-* `HG_AUTOREGRESSIVE_MODEL` - A HuggingFace autoregressive large language model (LLM) for text generation. For instance: `meta-llama/Llama-3.2-1B` (used during development).
-* `HG_API_TOKEN` - A HuggingFace API token.
+* `HF_AUTOREGRESSIVE_MODEL` - A HuggingFace autoregressive large language model (LLM) for text generation. For instance: `meta-llama/Llama-3.2-1B` (used during development).
+* `HF_API_TOKEN` - A HuggingFace API token.
 
 To install Python dependencies, simply run:
 

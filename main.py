@@ -12,10 +12,10 @@ class NaturalLanguagePayload(BaseModel):
 # Environment Variables
 load_dotenv(override=True)
 
-HG_API_TOKEN = os.getenv("HG_API_TOKEN")
-HG_AUTOREGRESSIVE_MODEL = os.getenv("HG_AUTOREGRESSIVE_MODEL")
+HF_API_TOKEN = os.getenv("HF_API_TOKEN")
+HF_AUTOREGRESSIVE_MODEL = os.getenv("HF_AUTOREGRESSIVE_MODEL")
 
-completion_client = AsyncInferenceClient(HG_AUTOREGRESSIVE_MODEL, token=HG_API_TOKEN)
+completion_client = AsyncInferenceClient(HF_AUTOREGRESSIVE_MODEL, token=HF_API_TOKEN)
 
 app = FastAPI()
 
